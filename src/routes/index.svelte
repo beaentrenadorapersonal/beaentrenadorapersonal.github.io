@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Bea Entrenadora Personal</title>
 </svelte:head>
 
 <section>

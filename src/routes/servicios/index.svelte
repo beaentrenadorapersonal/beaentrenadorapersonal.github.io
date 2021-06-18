@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-Servicios
+<div class="section">Servicios</div>
 
 <style>
 </style>
