@@ -1,0 +1,11 @@
+---
+version: "3.3"
+
+services:
+
+  nginx:
+    image: nginx:stable-alpine
+    ports:
+      - 8080:80/tcp
+    volumes:
+      - ./build/:/usr/share/nginx/html:ro
