@@ -1,29 +1,23 @@
 <script context="module" lang="ts">
 	export const prerender = true;
+
+	let title = 'Bea Entrenadora Personal';
 </script>
 
 <script lang="ts">
 </script>
 
 <svelte:head>
-	<title>Bea Entrenadora Personal</title>
+	<title>{title}</title>
 </svelte:head>
 
 <section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
+	<h1>{title}</h1>
 
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
+	<div class="flex-container intro">
+		<img class="intro_pic" src="intro.jpg" alt="bea intro" />
+		<p>Blah blah blah blah blah blah blah blah blah blah</p>
+	</div>
 </section>
 
 <style>
@@ -39,18 +33,19 @@
 		width: 100%;
 	}
 
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+	.intro_pic {
+		width: 40%;
+		border-radius: 20px;
+		box-shadow: 0 0 5px 1px rgba(100, 100, 100, 0.5);
+		border: 1px solid #ddd;
+		padding: 5px;
+		background-color: white;
 	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	.intro {
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+		text-align: center;
 	}
 </style>

@@ -101,8 +101,20 @@ button:focus:not(:focus-visible) {
 	outline: none;
 }
 
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+
 @media (min-width: 720px) {
 	h1 {
 		font-size: 2.4rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.flex-container {
+		flex-direction: column;
 	}
 }
