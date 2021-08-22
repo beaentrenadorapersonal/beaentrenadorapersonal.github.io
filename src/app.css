@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Rampart+One&display=swap');
+
+:root {
+	font-family: 'Noto Sans', sans-serif;
+	--header-bg-color: black;
+	--header-color: white;
+	--header-height: 3em;
+	--sidebar-bg-color: #eee;
+	--sidebar-color: black;
+}
+
+body {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.flex-container-row {
+	display: flex;
+	direction: row;
+}
+
+.flex-item-50 {
+	width: 50%;
+}
+
+h1 {
+	font-family: 'Rampart One', cursive;
+	text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+	.flex-container-row {
+		flex-direction: column;
+	}
+
+	.flex-item-50 {
+		width: 100%;
+	}
+}
+
