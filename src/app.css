@@ -2,6 +2,8 @@
 
 :root {
 	font-family: 'Noto Sans', sans-serif;
+	--main-bg-color: pink;
+	--main-color: black;
 	--header-bg-color: black;
 	--header-color: white;
 	--header-height: 3em;
@@ -9,11 +11,20 @@
 	--sidebar-color: black;
 }
 
+html, body, #svelte {
+	min-height: 100vh;
+}
+
+#svelte {
+	display: flex;
+	flex-direction: column;
+}
+
 body {
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: 0;
-	margin-right: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	margin: 0;
 }
 
 .flex-container-row {

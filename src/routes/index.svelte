@@ -16,12 +16,15 @@
 		<h1>Salud y bienestar</h1>
 	</div>
 
-	<Carousel interval={3500}>
-		<CarouselImage visible={true} src="grupos.jpg" alt="grupo" />
-		<CarouselImage src="individual.jpg" alt="individual" message="No te ahogues" />
-		<CarouselImage src="intro.jpg" alt="intro" message="Porque yo lo valgo" />
-		<CarouselImage src="mamas.jpg" alt="mamas" message="Slurp!!!" />
-	</Carousel>
+	<div class="carousel">
+		<Carousel interval={3500}>
+			<CarouselImage visible={true} src="grupos.jpg" alt="grupo" />
+			<h1>test</h1>
+			<CarouselImage src="individual.jpg" alt="individual" message="No te ahogues" />
+			<CarouselImage src="intro.jpg" alt="intro" message="Porque yo lo valgo" />
+			<CarouselImage src="mamas.jpg" alt="mamas" message="Slurp!!!" />
+		</Carousel>
+	</div>
 
 	<div class="motivational">
 		<h1>Chorizo y Bacon</h1>
@@ -41,5 +44,9 @@
 		text-align: center;
 		width: 100%;
 		background-color: pink;
+	}
+
+	.carousel {
+		height: 500px;
 	}
 </style>

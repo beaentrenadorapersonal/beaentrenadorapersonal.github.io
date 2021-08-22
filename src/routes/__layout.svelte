@@ -1,9 +1,13 @@
 <script lang="ts">
 	import Header from '$lib/Header/index.svelte';
+	import Sidebar from '$lib/Sidebar/index.svelte';
 	import '../app.css';
 </script>
 
-<Header />
+<header>
+	<Header />
+	<Sidebar />
+</header>
 
 <main>
 	<slot />
@@ -16,17 +20,20 @@
 </footer>
 
 <style>
+	header {
+		background-color: var(--header-bg-color);
+		color: var(--header-color);
+	}
+
 	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
+		background-color: var(--main-bg-color);
+		color: var(--main-color);
 		width: 100%;
+		height: 100%;
 		margin: 0 auto;
 		box-sizing: border-box;
 		position: relative;
-		top: var(--header-height);
-		padding-bottom: 0.5em;
-		height: 100%;
+		flex-grow: 1;
 	}
 
 	footer {
@@ -38,7 +45,6 @@
 		background-color: var(--header-bg-color);
 		color: var(--header-color);
 		position: relative;
-		top: var(--header-height);
 		padding: 1em;
 	}
 </style>

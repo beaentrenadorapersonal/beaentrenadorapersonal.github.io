@@ -19,7 +19,7 @@
 	}
 
 	img {
-		height: 600px;
+		height: 500px;
 		transition: all 1s linear;
 	}
 

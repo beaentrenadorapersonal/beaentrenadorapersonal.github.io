@@ -21,10 +21,6 @@
 </div>
 
 <style>
-	.contact-info {
-		padding: 1em;
-	}
-
 	.map {
 		width: 100%;
 		height: 450px;
