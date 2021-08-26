@@ -28,7 +28,7 @@
 
 	<div class="flex-container-row">
 		<div class="flex-item-50 service__img">
-			<Image src="servicios/05.png" alt="Entrenamientos personales individuales y nutrición" />
+			<Image src="servicios/05.jpg" alt="Entrenamientos personales individuales y nutrición" />
 		</div>
 
 		<div class="flex-item-50 service__info">
@@ -74,7 +74,7 @@
 
 	<div class="flex-container-row">
 		<div class="flex-item-50 service__img">
-			<Image src="servicios/06.png" alt="Entrenamientos en grupo reducido y nutrición" />
+			<Image src="servicios/06.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
 		</div>
 
 		<div class="flex-item-50 service__info">
