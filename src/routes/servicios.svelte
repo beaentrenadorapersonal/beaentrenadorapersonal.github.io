@@ -7,8 +7,8 @@
 		faPencilAlt,
 		faUtensils
 	} from '@fortawesome/free-solid-svg-icons';
-	import Service from '$lib/Service/Service.svelte';
-	import ServicePoint from '$lib/Service/ServicePoint.svelte';
+	import Service from '$lib/service/Service.svelte';
+	import ServicePoint from '$lib/service/ServicePoint.svelte';
 	import Image from '$lib/Image/index.svelte';
 </script>
 
