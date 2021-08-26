@@ -14,24 +14,24 @@
 		<Carousel interval={3500}>
 			<CarouselElement visible={true}>
 				<Image
-					src="inicio/01.jpg"
+					src="/inicio/01.jpg"
 					alt="Salud, motivación y resultados"
 					message="Salud, motivación y resultados"
 				/>
 			</CarouselElement>
 			<CarouselElement>
 				<Image
-					src="inicio/02.jpg"
+					src="/inicio/02.jpg"
 					alt="Difícil no significa impostible"
 					message="Difícil no significa impostible"
 				/>
 			</CarouselElement>
 			<CarouselElement>
-				<Image src="inicio/03.jpg" alt="Es dif" message="Salud, motivación y resultados" />
+				<Image src="/inicio/03.jpg" alt="Es dif" message="Salud, motivación y resultados" />
 			</CarouselElement>
 			<CarouselElement>
 				<Image
-					src="inicio/04.jpg"
+					src="/inicio/04.jpg"
 					alt="Es difícil, por eso vale la pena"
 					message="Es difícil, por eso vale la pena"
 				/>
