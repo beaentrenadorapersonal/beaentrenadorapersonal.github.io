@@ -14,16 +14,14 @@
 	--sidebar-color: black;
 }
 
-html, body, #svelte {
-	min-height: 100vh;
-	max-width: 100vw;
-	overflow-x: hidden;
+body {
 }
 
 #svelte {
-	display: flex;
-	flex-direction: column;
 	min-height: 100vh;
+	overflow-x: hidden;
+	margin: auto;
+	max-width: 1000px;
 }
 
 body {
@@ -33,7 +31,7 @@ body {
 
 .flex-container-row {
 	display: flex;
-	direction: row;
+	flex-direction: row;
 }
 
 .flex-item-50 {
@@ -42,11 +40,11 @@ body {
 
 .first-screen {
 	height: calc(100vh - var(--header-height));
-	width: 100vw;
+	width: 100%;
 }
 
 .full-screen {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 }
 

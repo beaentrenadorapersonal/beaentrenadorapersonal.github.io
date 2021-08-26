@@ -13,7 +13,7 @@
 </script>
 
 <div class="first-screen">
-	<Image src="/servicios/title.jpg" alt="Sea cual sea tu objetivo estamos aqu√≠ para ayudar" />
+	<Image src="/servicios/title.jpg" alt="Sea cual sea tu objetivo estamos aquí para ayudar" />
 	<div class="first-screen__text-container">
 		<div class="first-screen__text">
 			<strong>Sea cual sea tu objetivo estamos aquí para ayudar</strong>
@@ -137,6 +137,7 @@
 
 	.service__img {
 		height: 70vw;
+		max-height: 700px;
 	}
 
 	.service__info {
