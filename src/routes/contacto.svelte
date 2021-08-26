@@ -1,7 +1,4 @@
 <script lang="ts">
-	import { title } from '../stores';
-
-	title.set('Contacto');
 </script>
 
 <div class="flex-container-row">

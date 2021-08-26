@@ -10,10 +10,6 @@
 	import Service from '$lib/Service/Service.svelte';
 	import ServicePoint from '$lib/Service/ServicePoint.svelte';
 	import Image from '$lib/Image/index.svelte';
-
-	import { title } from '../stores';
-
-	title.set('Servicios');
 </script>
 
 <div class="first-screen">

@@ -1,20 +1,18 @@
 <script lang="ts">
-	import { title } from '../../stores';
-
-	let nav_title = '';
-	title.subscribe((value) => {
-		nav_title = value;
-	});
 </script>
 
 <svelte:head>
-	<title>Bea - {nav_title}</title>
+	<title>Bea Entrenadora Personal</title>
 </svelte:head>
 
 <div class="header">
-	<div class="baritem">
-		<a sveltekit:prefetch class="bar-link" href="/">Bea</a>
-		&gt; {nav_title}
+	<div class="container">
+		<div class="logo-container">
+			<a sveltekit:prefetch href="/">
+				<img src="favicon.png" alt="logo" />
+			</a>
+		</div>
+		<div class="title">Bea Entrenadora Personal</div>
 	</div>
 </div>
 
@@ -30,9 +28,22 @@
 		z-index: 1; /* Stay on top */
 	}
 
-	.bar-link {
-		text-decoration: none;
-		color: var(--header-color);
-		padding-left: 1em;
+	.container {
+		position: relative;
+		left: 1em;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.logo-container {
+		text-align: center;
+		background-color: white;
+		border-radius: 50%;
+		width: 35px;
+		height: 35px;
+	}
+	.title {
+		margin-left: 1em;
 	}
 </style>

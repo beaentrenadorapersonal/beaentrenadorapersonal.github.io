@@ -1,10 +1,6 @@
 <script context="module" lang="ts">
 	import Image from '$lib/Image/index.svelte';
 
-	import { title } from '../stores';
-
-	title.set('Inicio');
-
 	export const prerender = true;
 </script>
 
