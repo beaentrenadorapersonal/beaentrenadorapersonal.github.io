@@ -1,30 +1,181 @@
 <script lang="ts">
-	import Brief from './_brief.svelte';
+	import Icon from '$lib/Icon/index.svelte';
+	import {
+		faDumbbell,
+		faStopwatch,
+		faUser,
+		faPencilAlt,
+		faUtensils
+	} from '@fortawesome/free-solid-svg-icons';
+	import Service from '$lib/Service/Service.svelte';
+	import ServicePoint from '$lib/Service/ServicePoint.svelte';
+	import Image from '$lib/Image/index.svelte';
 
 	import { title } from '../stores';
 
 	title.set('Servicios');
 </script>
 
-<Brief
-	title="Entrenamientos individuales"
-	description="Este entrenamiento se adapta 100% a las necesidades y objetivo del cliente/a atendiendo a sus particularidades en todo momento, y respetando su ritmo de trabajo así como su disponibilidad. En la primera toma de contacto, donde se expone el caso del cliente, se toman medidas anatómicas, pesos y porcentajes y se hace un estudio de su composición corporal. Este estudio más las particularidades, forma física y objetivo del cliente/a será determinante para trazar la planificación que se va a llevar a cabo durante el entrenamiento."
-	imgSrc="/individual.jpg"
-	imgAlt="entrenamientos individuales"
-	position="left"
-/>
-<Brief
-	title="Entrenamientos en grupos"
-	description="En los entrenamientos en grupo reducido (de 2 a 4 personas) se trabaja de forma general el objetivo de tod@s los participantes atendiendo a las particularidades de cada un@ de ell@s. Són entrenamientos dinámicos donde se adaptan pesos y ejercicios a cada caso, buscando la afinidad entre las participantes de edades y/o perfiles similares."
-	imgSrc="/grupos.jpg"
-	imgAlt="entrenamientos en grupo"
-	position="right"
-/>
-<Brief
-	title="Mommy & Welness"
-	description="Este servicio combinado de asesoría en la lactancia y ejercicios de recuperación post parto busca el bienestar conjunto para el bebé y la mamá también enfocada como mujer.
-Un trabajo conjunto con una asesora de lactancia y enfermera materno-infantil que puede llevarse a cabo a partir del día del nacimiento de bebé.  Una vez finalizada la cuarentena buscaremos el espacio para la mujer con unas sesiones de 30’ donde se activará la musculatura de las zonas que se han visto afectadas por el embarazo, el parto y el post-parto (ejercicios para la recuperación del suelo pélvico, mejorar el tono muscular de la espalda y combatir las molestias típicas del embarazo, relajar y liberar la mente del día a día). Puedes disponer de ambos servicios tanto combinados como por separado y disfrutar tu parte de wellness tanto individual como en grupo reducido (de 2 a 4 personas)."
-	imgSrc="/mamas.jpg"
-	imgAlt="para mamás"
-	position="left"
-/>
+<div class="first-screen">
+	<Image src="servicios/title.jpg" alt="Sea cual sea tu objetivo estamos aqu√≠ para ayudar" />
+	<div class="first-screen__text-container">
+		<div class="first-screen__text">
+			<strong>Sea cual sea tu objetivo estamos aquí para ayudar</strong>
+		</div>
+	</div>
+</div>
+
+<div class="service">
+	<h3 class="service__title">
+		<Icon data={faDumbbell} /> Entrenamientos personales individuales y nutrición
+	</h3>
+
+	<div class="flex-container-row">
+		<div class="flex-item-50 service__img">
+			<Image src="servicios/05.png" alt="Entrenamientos personales individuales y nutrición" />
+		</div>
+
+		<div class="flex-item-50 service__info">
+			<Service>
+				<ServicePoint
+					icon={faUser}
+					emphasis="Entrenamiendo individual 100% personalizado"
+					additional="para las necesidades y objetivos del cliente"
+				/>
+				<ServicePoint icon={faStopwatch} emphasis="Horario flexible" />
+				<ServicePoint
+					icon={faPencilAlt}
+					emphasis="Evaluación y asesoramiento"
+					additional="donde se toman medidas anatómicas, peso y composición"
+				/>
+				<ServicePoint
+					icon={faUtensils}
+					emphasis="Dieta incluída gratuita"
+					additional=" si contrata dos sesiones o más a la semana corporal"
+				/>
+			</Service>
+			<div class="service__price">
+				<ul>
+					<li>1 sesión 80 euros</li>
+					<li>Bono 5 sesiones 70 euros (350)</li>
+					<li>Bono 10 sesiones 60 euros (600)</li>
+					<li>Bono 20 sesiones 45 euros (900)</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="service__quote">
+		<div class="quote__content">"Lo mejor es el bocadillo de jamón y la cerveza de después"</div>
+		<div class="quote__name">Marilú, 49 años, 12 hijos</div>
+	</div>
+</div>
+
+<div class="service">
+	<h3 class="service__title">
+		<Icon data={faDumbbell} /> Entrenamientos en grupo reducido y nutrición
+	</h3>
+
+	<div class="flex-container-row">
+		<div class="flex-item-50 service__img">
+			<Image src="servicios/06.png" alt="Entrenamientos en grupo reducido y nutrición" />
+		</div>
+
+		<div class="flex-item-50 service__info">
+			<Service>
+				<ServicePoint
+					icon={faUser}
+					emphasis="Entrenamiendo en grupo reducido de 2-4 personas y 100% personalizado"
+					additional="para las necesidades y objetivos de cada cliente"
+				/>
+				<ServicePoint icon={faStopwatch} emphasis="Horario flexible" />
+				<ServicePoint
+					icon={faPencilAlt}
+					emphasis="Evaluación y asesoramiento"
+					additional="donde se toman medidas anatómicas, peso y composición"
+				/>
+				<ServicePoint
+					icon={faUtensils}
+					emphasis="Dieta incluída gratuita"
+					additional=" si contrata dos sesiones o más a la semana corporal"
+				/>
+			</Service>
+			<div class="service__price">
+				<ul>
+					<li>25 euros por persona y sesión</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="service__quote">
+		<div class="quote__content">"Y luego nos vamos de tapas a criticar a Bea!!!"</div>
+		<div class="quote__name">Pepi, 52 años, 3 ex-maridos</div>
+	</div>
+</div>
+
+<style>
+	.first-screen {
+		text-align: center;
+	}
+
+	.first-screen__text-container {
+		background-color: rgba(0, 0, 0, 0.5);
+		position: relative;
+		bottom: 100%;
+		color: white;
+		height: 100%;
+	}
+
+	.first-screen__text {
+		position: relative;
+		top: 60%;
+		width: 100%;
+		font-size: 2em;
+	}
+
+	.service__title {
+		padding: 1em;
+		text-align: center;
+	}
+
+	.service__img {
+		height: 70vw;
+	}
+
+	.service__info {
+		background-color: sienna;
+		color: white;
+	}
+
+	.service__price {
+		background-color: #eccdbe;
+		color: black;
+		margin: 1em;
+		border-radius: 5px;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+
+	.service__quote {
+		background-color: white;
+		border-radius: 10px;
+		padding: 1em;
+		margin: 1em;
+	}
+
+	.quote__content {
+		font-style: italic;
+		font-size: 1.2em;
+	}
+
+	.quote__name {
+		text-align: right;
+	}
+
+	@media (max-width: 700px) {
+		.service__img {
+			height: 100vw;
+		}
+	}
+</style>

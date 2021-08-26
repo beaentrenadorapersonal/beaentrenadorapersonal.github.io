@@ -28,11 +28,6 @@
 	main {
 		background-color: var(--main-bg-color);
 		color: var(--main-color);
-		width: 100%;
-		height: 100%;
-		margin: 0 auto;
-		box-sizing: border-box;
-		position: relative;
 		flex-grow: 1;
 	}
 

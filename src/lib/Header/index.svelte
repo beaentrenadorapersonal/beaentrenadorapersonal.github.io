@@ -30,12 +30,9 @@
 		z-index: 1; /* Stay on top */
 	}
 
-	.baritem {
-		padding-left: 1em;
-	}
-
 	.bar-link {
 		text-decoration: none;
 		color: var(--header-color);
+		padding-left: 1em;
 	}
 </style>

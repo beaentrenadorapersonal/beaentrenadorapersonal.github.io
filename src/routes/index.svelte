@@ -1,4 +1,6 @@
 <script context="module" lang="ts">
+	import Image from '$lib/Image/index.svelte';
+
 	import { title } from '../stores';
 
 	title.set('Inicio');
@@ -8,26 +10,37 @@
 
 <script lang="ts">
 	import Carousel from '$lib/Carousel/index.svelte';
-	import CarouselImage from '$lib/CarouselImage/index.svelte';
+	import CarouselElement from '$lib/CarouselElement/index.svelte';
 </script>
 
 <section>
-	<div class="motivational">
-		<h1>Salud y bienestar</h1>
-	</div>
-
-	<div class="carousel">
+	<div class="first-screen">
 		<Carousel interval={3500}>
-			<CarouselImage visible={true} src="grupos.jpg" alt="grupo" />
-			<h1>test</h1>
-			<CarouselImage src="individual.jpg" alt="individual" message="No te ahogues" />
-			<CarouselImage src="intro.jpg" alt="intro" message="Porque yo lo valgo" />
-			<CarouselImage src="mamas.jpg" alt="mamas" message="Slurp!!!" />
+			<CarouselElement visible={true}>
+				<Image
+					src="inicio/01.jpg"
+					alt="Salud, motivación y resultados"
+					message="Salud, motivación y resultados"
+				/>
+			</CarouselElement>
+			<CarouselElement>
+				<Image
+					src="inicio/02.jpg"
+					alt="Difícil no significa impostible"
+					message="Difícil no significa impostible"
+				/>
+			</CarouselElement>
+			<CarouselElement>
+				<Image src="inicio/03.jpg" alt="Es dif" message="Salud, motivación y resultados" />
+			</CarouselElement>
+			<CarouselElement>
+				<Image
+					src="inicio/04.jpg"
+					alt="Es difícil, por eso vale la pena"
+					message="Es difícil, por eso vale la pena"
+				/>
+			</CarouselElement>
 		</Carousel>
-	</div>
-
-	<div class="motivational">
-		<h1>Chorizo y Bacon</h1>
 	</div>
 </section>
 
@@ -38,15 +51,5 @@
 		justify-content: center;
 		align-items: center;
 		flex: 1;
-	}
-
-	.motivational {
-		text-align: center;
-		width: 100%;
-		background-color: pink;
-	}
-
-	.carousel {
-		height: 500px;
 	}
 </style>

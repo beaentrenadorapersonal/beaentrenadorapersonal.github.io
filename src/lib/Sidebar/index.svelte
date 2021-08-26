@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from 'svelte-awesome/components/Icon.svelte';
+	import Icon from '$lib/Icon/index.svelte';
 	import { faBars } from '@fortawesome/free-solid-svg-icons';
 	import { faInstagram, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 
@@ -54,7 +54,7 @@
 		top: 0;
 		right: 10px;
 		transform: rotate(90deg);
-		transition: all 0.2s linear;
+		transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 		z-index: 999;
 		border-radius: 50%;
 		width: 3em;
@@ -63,7 +63,7 @@
 
 	.hambMenuClosed {
 		transform: rotate(0deg);
-		transition: all 0.2s linear;
+		transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	}
 
 	.sidebar {
@@ -75,7 +75,7 @@
 		width: 200px;
 		height: 100%;
 		z-index: 1;
-		transition: all 0.2s ease;
+		transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 		overflow-x: hidden;
 		display: flex;
 		flex-direction: column;
@@ -85,11 +85,12 @@
 
 	.sidebar-closed {
 		width: 0;
-		transition: all 0.2s ease;
+		transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	}
 
 	.sidebar-link {
 		padding-top: 1em;
+		padding-bottom: 1em;
 		padding-left: 1em;
 		padding-right: 1em;
 		text-decoration: none;
