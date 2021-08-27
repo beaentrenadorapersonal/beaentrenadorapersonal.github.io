@@ -89,8 +89,11 @@
 	</div>
 
 	<div class="service__quote">
-		<div class="quote__content">"Lo mejor es el bocadillo de jamón y la cerveza de después"</div>
-		<div class="quote__name">Marilú, 49 años, 12 hijos</div>
+		<div class="quote__content">
+			"Nunca pensé que aprendería a nadar y con 46 años y en menos de 2 meses aprendí a hacerlo. Ha
+			sido una experiencia inolvidable. SI QUIERES, PUEDES!"
+		</div>
+		<div class="quote__name">Elena P.</div>
 	</div>
 </div>
 
@@ -152,8 +155,11 @@
 	</div>
 
 	<div class="service__quote">
-		<div class="quote__content">"Y luego nos vamos de tapas a criticar a Bea!!!"</div>
-		<div class="quote__name">Pepi, 52 años, 3 ex-maridos</div>
+		<div class="quote__content">
+			"No ha sido solo mejorar mi condición física y psicológica sino que el 'YO SÍ PUEDO' se haya
+			convertido en parte de mi vida"
+		</div>
+		<div class="quote__name">Maria José B.</div>
 	</div>
 </div>
 
@@ -198,8 +204,11 @@
 	</div>
 
 	<div class="service__quote">
-		<div class="quote__content">"Y luego nos vamos de tapas a criticar a Bea!!!"</div>
-		<div class="quote__name">Pepi, 52 años, 3 ex-maridos</div>
+		<div class="quote__content">
+			"Gracias a mi entrenadora he subido mi autoestima, confío en mi y me siento más fuerte además
+			de haber tomado conciencia de buenos hábitos y no abandonarlos. Experiencia 100% recomendable"
+		</div>
+		<div class="quote__name">Lorena S.</div>
 	</div>
 </div>
 
@@ -244,8 +253,12 @@
 	</div>
 
 	<div class="service__quote">
-		<div class="quote__content">"Y luego nos vamos de tapas a criticar a Bea!!!"</div>
-		<div class="quote__name">Pepi, 52 años, 3 ex-maridos</div>
+		<div class="quote__content">
+			"Llevaba mucho tiempo sin entrenar y Bea ha hecho que mi vuelta sea mucho más fácil y
+			motivadora. Su profesionalidad para ver qué dinámicas y ritmo necesito hace que sude la
+			camiseta como nunca! Y además SIEMPRE CON UNA SONRISA!"
+		</div>
+		<div class="quote__name">Mar P.</div>
 	</div>
 </div>
 
@@ -277,8 +290,11 @@
 	</div>
 
 	<div class="service__quote">
-		<div class="quote__content">"Y luego nos vamos de tapas a criticar a Bea!!!"</div>
-		<div class="quote__name">Pepi, 52 años, 3 ex-maridos</div>
+		<div class="quote__content">
+			"Tengo poco tiempo para entrenar y la manera de APROVECHAR MI TIEMPO AL 120% es con la ayuda
+			de Bea"
+		</div>
+		<div class="quote__name">Fran R.</div>
 	</div>
 </div>
 
