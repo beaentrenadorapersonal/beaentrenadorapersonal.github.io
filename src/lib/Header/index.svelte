@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="logo-container">
 			<a sveltekit:prefetch href="/">
-				<img src="favicon.png" alt="logo" />
+				<img src="/favicon.png" alt="logo" />
 			</a>
 		</div>
 		<div class="title">Bea Entrenadora Personal</div>
