@@ -16,20 +16,20 @@
 
 <style>
 	.container {
-		width: auto;
+		width: 100%;
 		height: 100%;
 	}
 
 	.container__image {
-		width: auto;
+		width: 100%;
 		height: 100%;
+		text-align: center;
 	}
 
 	img {
-		max-height: 100%;
-		width: auto;
+		width: 100%;
+		height: 100%;
 		object-fit: cover;
-		overflow: hidden;
 	}
 
 	.message-container {

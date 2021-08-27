@@ -1,14 +1,18 @@
 <script lang="ts">
 	import Icon from '$lib/Icon/index.svelte';
+	import Carousel from '$lib/Carousel/index.svelte';
+	import CarouselElement from '$lib/CarouselElement/index.svelte';
 	import {
+		faBaby,
+		faClipboardList,
+		faFemale,
 		faDumbbell,
 		faStopwatch,
 		faUser,
 		faPencilAlt,
+		faGlobe,
 		faUtensils
 	} from '@fortawesome/free-solid-svg-icons';
-	import Service from '$lib/service/Service.svelte';
-	import ServicePoint from '$lib/service/ServicePoint.svelte';
 	import Image from '$lib/Image/index.svelte';
 </script>
 
@@ -21,7 +25,7 @@
 	</div>
 </div>
 
-<div class="service">
+<div class="service-section">
 	<h3 class="service__title">
 		<Icon data={faDumbbell} /> Entrenamientos personales individuales y nutrición
 	</h3>
@@ -32,31 +36,54 @@
 		</div>
 
 		<div class="flex-item-50 service__info">
-			<Service>
-				<ServicePoint
-					icon={faUser}
-					emphasis="Entrenamiendo individual 100% personalizado"
-					additional="para las necesidades y objetivos del cliente"
-				/>
-				<ServicePoint icon={faStopwatch} emphasis="Horario flexible" />
-				<ServicePoint
-					icon={faPencilAlt}
-					emphasis="Evaluación y asesoramiento"
-					additional="donde se toman medidas anatómicas, peso y composición"
-				/>
-				<ServicePoint
-					icon={faUtensils}
-					emphasis="Dieta incluída gratuita"
-					additional=" si contrata dos sesiones o más a la semana corporal"
-				/>
-			</Service>
-			<div class="service__price">
-				<ul>
-					<li>1 sesión 80 euros</li>
-					<li>Bono 5 sesiones 70 euros (350)</li>
-					<li>Bono 10 sesiones 60 euros (600)</li>
-					<li>Bono 20 sesiones 45 euros (900)</li>
-				</ul>
+			<div class="service__description">
+				<div class="service__bulletpoint">
+					<Icon data={faUser} />
+					<strong>Entrenamiendo individual 100% personalizado</strong>
+					para las necesidades y objetivos de cada cliente
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faStopwatch} />
+					<strong>Horario flexible</strong>
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faPencilAlt} />
+					<strong>Evaluación y asesoramiento</strong>
+					donde se toman medidas anatómicas, peso y composición
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faUtensils} />
+					<strong>Dieta incluída gratuita</strong>
+					si contrata dos sesiones o más a la semana corporal
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faGlobe} />
+					<strong>En centro deportivo, domicilio u online</strong>
+				</div>
+			</div>
+
+			<div class="service__price-container">
+				<div class="service__price">
+					En centro deportivo u online:
+					<ul>
+						<li>1 sesión 80 euros</li>
+						<li>Bono 5 sesiones 70 euros (350)</li>
+						<li>Bono 10 sesiones 60 euros (600)</li>
+						<li>Bono 20 sesiones 45 euros (900)</li>
+					</ul>
+
+					En domicilio:
+					<ul>
+						<li>1 sesión 100 euros</li>
+						<li>Bono 5 sesiones 80 euros (400)</li>
+						<li>Bono 10 sesiones 70 euros (700)</li>
+						<li>Bono 20 sesiones 60 euros (1200)</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -67,7 +94,7 @@
 	</div>
 </div>
 
-<div class="service">
+<div class="service-section">
 	<h3 class="service__title">
 		<Icon data={faDumbbell} /> Entrenamientos en grupo reducido y nutrición
 	</h3>
@@ -78,28 +105,48 @@
 		</div>
 
 		<div class="flex-item-50 service__info">
-			<Service>
-				<ServicePoint
-					icon={faUser}
-					emphasis="Entrenamiendo en grupo reducido de 2-4 personas y 100% personalizado"
-					additional="para las necesidades y objetivos de cada cliente"
-				/>
-				<ServicePoint icon={faStopwatch} emphasis="Horario flexible" />
-				<ServicePoint
-					icon={faPencilAlt}
-					emphasis="Evaluación y asesoramiento"
-					additional="donde se toman medidas anatómicas, peso y composición"
-				/>
-				<ServicePoint
-					icon={faUtensils}
-					emphasis="Dieta incluída gratuita"
-					additional=" si contrata dos sesiones o más a la semana corporal"
-				/>
-			</Service>
-			<div class="service__price">
-				<ul>
-					<li>25 euros por persona y sesión</li>
-				</ul>
+			<div class="service__description">
+				<div class="service__bulletpoint">
+					<Icon data={faUser} />
+					<strong>Entrenamiendo en grupo reducido de 2-4 personas y 100% personalizado</strong>
+					para las necesidades y objetivos de cada cliente
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faStopwatch} />
+					<strong>Horario flexible</strong>
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faPencilAlt} />
+					<strong>Evaluación y asesoramiento</strong>
+					donde se toman medidas anatómicas, peso y composición
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faUtensils} />
+					<strong>Dieta incluída gratuita</strong>
+					si contrata dos sesiones o más a la semana corporal
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faGlobe} />
+					<strong>En centro deportivo, domicilio u online</strong>
+				</div>
+			</div>
+
+			<div class="service__price-container">
+				<div class="service__price">
+					En centro deportivo u online:
+					<ul>
+						<li>25 euros por persona y sesión</li>
+					</ul>
+
+					En domicilio:
+					<ul>
+						<li>40 euros por persona y sesión</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -109,6 +156,133 @@
 		<div class="quote__name">Pepi, 52 años, 3 ex-maridos</div>
 	</div>
 </div>
+
+<div class="service-section">
+	<h3 class="service__title">
+		<Icon data={faDumbbell} /> Mommy and Wellness
+	</h3>
+
+	<div class="flex-container-row">
+		<div class="flex-item-50 service__img">
+			<Carousel interval={3500}>
+				<CarouselElement visible={true}>
+					<Image src="/servicios/07.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
+				</CarouselElement>
+				<CarouselElement>
+					<Image src="/servicios/08.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
+				</CarouselElement>
+			</Carousel>
+		</div>
+
+		<div class="flex-item-50 service__info">
+			<div class="service__description">
+				<div class="service__bulletpoint">
+					<Icon data={faBaby} />
+					<strong>3 servicios de consultoría de lactancia</strong>
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faFemale} />
+					<strong>4 sesiones de 30’ de recuperación y bienestar post parto</strong>
+				</div>
+			</div>
+
+			<div class="service__price-container">
+				<div class="service__price">
+					<ul>
+						<li>Pack 260 euros</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="service__quote">
+		<div class="quote__content">"Y luego nos vamos de tapas a criticar a Bea!!!"</div>
+		<div class="quote__name">Pepi, 52 años, 3 ex-maridos</div>
+	</div>
+</div>
+
+<div class="service-section">
+	<h3 class="service__title">
+		<Icon data={faDumbbell} /> Plan a tu Medida
+	</h3>
+
+	<div class="flex-container-row">
+		<div class="flex-item-50 service__img">
+			<Image src="/servicios/09.jpg" alt="Plan a tu Medida" />
+		</div>
+
+		<div class="flex-item-50 service__info">
+			<div class="service__description">
+				Servicio combinado de pauta de entrenamiento y nutrición
+
+				<div class="service__bulletpoint">
+					<Icon data={faClipboardList} />
+					<strong
+						>pauta de entrenamiento se adapta al material de tu centro deportivo o hogar y al
+						espacio utilizado</strong
+					>
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faUtensils} />
+					<strong
+						>pauta de nutrición es totalmente personalizada al objetivo, ejercicio y día a día.</strong
+					>
+				</div>
+			</div>
+
+			<div class="service__price-container">
+				<div class="service__price">
+					<ul>
+						<li>Pack 100 euros</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="service__quote">
+		<div class="quote__content">"Y luego nos vamos de tapas a criticar a Bea!!!"</div>
+		<div class="quote__name">Pepi, 52 años, 3 ex-maridos</div>
+	</div>
+</div>
+
+<div class="service-section">
+	<h3 class="service__title">
+		<Icon data={faDumbbell} /> Servicio de Asesoramiento
+	</h3>
+
+	<div class="flex-container-row">
+		<div class="flex-item-50 service__img">
+			<Image src="/servicios/10.jpg" alt="Servicio de Asesoramiento" />
+		</div>
+
+		<div class="flex-item-50 service__info">
+			<div class="service__description">
+				Todas esas respuestas o tips que necesitas para asegurarte de que tu plan de ejercicios y
+				alimentación es correcto, consejos, feedback,orientación y motivación para que continúes tu
+				andadura en el entrenamiento con más confianza y efectividad.
+			</div>
+
+			<div class="service__price-container">
+				<div class="service__price">
+					<ul>
+						<li>80 euros/hora</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="service__quote">
+		<div class="quote__content">"Y luego nos vamos de tapas a criticar a Bea!!!"</div>
+		<div class="quote__name">Pepi, 52 años, 3 ex-maridos</div>
+	</div>
+</div>
+
+<br />
 
 <style>
 	.first-screen {
@@ -135,23 +309,32 @@
 		text-align: center;
 	}
 
-	.service__img {
-		height: 70vw;
-		max-height: 700px;
-	}
-
 	.service__info {
 		background-color: sienna;
+		min-height: 400px;
 		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.service__description {
+		padding: 1em;
+	}
+
+	.service__bulletpoint {
+		padding-bottom: 0.5em;
+	}
+
+	.service__price-container {
+		background-color: #eccdbe;
+		color: black;
+		margin: 0.5em;
+		border-radius: 5px;
 	}
 
 	.service__price {
-		background-color: #eccdbe;
-		color: black;
-		margin: 1em;
-		border-radius: 5px;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
+		padding: 0.5em;
 	}
 
 	.service__quote {
@@ -170,9 +353,13 @@
 		text-align: right;
 	}
 
-	@media (max-width: 700px) {
+	@media (max-width: 800px) {
 		.service__img {
 			height: 100vw;
+		}
+
+		.service__info {
+			min-height: 0;
 		}
 	}
 </style>
