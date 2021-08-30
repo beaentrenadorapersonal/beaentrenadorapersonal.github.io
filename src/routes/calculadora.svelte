@@ -18,6 +18,8 @@
 	let sessions = 1;
 	let group = false;
 
+	let additional = 0;
+
 	let total = 80;
 
 	function calculatePersonalTraining() {
@@ -36,19 +38,16 @@
 				}
 			}
 		} else if (location.id === 2) {
-			if (group) {
-				total = sessions * 40;
+			if (sessions < 5) {
+				total = sessions * 145;
+			} else if (sessions < 10) {
+				total = sessions * 125;
+			} else if (sessions < 20) {
+				total = sessions * 115;
 			} else {
-				if (sessions < 5) {
-					total = sessions * 100;
-				} else if (sessions < 10) {
-					total = sessions * 80;
-				} else if (sessions < 20) {
-					total = sessions * 70;
-				} else {
-					total = sessions * 60;
-				}
+				total = sessions * 105;
 			}
+			total = total + 25 * additional;
 		} else {
 			total = 666;
 		}
@@ -80,11 +79,6 @@
 	{#if selected.id === 1}
 		<br />
 		<form on:change={calculatePersonalTraining}>
-			<label>
-				<input type="checkbox" id="group" bind:checked={group} />
-				En grupo
-			</label>
-			<br />
 			<select bind:value={location} on:change={(e) => console.log(e)}>
 				{#each locations as l}
 					<option value={l}>
@@ -96,6 +90,23 @@
 			<label>
 				Sesiones: <input type="number" bind:value={sessions} min="1" />
 			</label>
+			<br />
+
+			{#if location.id !== 2}
+				<label>
+					<input type="checkbox" id="group" bind:checked={group} />
+					En grupo
+				</label>
+			{:else}
+				<label>
+					Personas adicionales: <input
+						type="number"
+						bind:value={additional}
+						min="0"
+						disabled={location.id !== 2}
+					/>
+				</label>
+			{/if}
 		</form>
 
 		<div class="total">

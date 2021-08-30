@@ -4,20 +4,23 @@
 	import CarouselElement from '$lib/CarouselElement/index.svelte';
 	import {
 		faBaby,
+		faCalendar,
+		faClipboardCheck,
 		faClipboardList,
 		faFemale,
 		faDumbbell,
+		faRunning,
+		faSearch,
 		faStopwatch,
 		faUser,
 		faPencilAlt,
 		faGlobe,
 		faUtensils
 	} from '@fortawesome/free-solid-svg-icons';
-	import Image from '$lib/Image/index.svelte';
 </script>
 
 <div class="first-screen">
-	<Image src="/servicios/title.jpg" alt="Sea cual sea tu objetivo estamos aquí para ayudar" />
+	<img src="/servicios/title.jpg" alt="Sea cual sea tu objetivo estamos aquí para ayudar" />
 	<div class="first-screen__text-container">
 		<div class="first-screen__text">
 			<strong>Sea cual sea tu objetivo estamos aquí para ayudar</strong>
@@ -27,19 +30,26 @@
 
 <div class="service-section">
 	<h3 class="service__title">
-		<Icon data={faDumbbell} /> Entrenamientos personales individuales y nutrición
+		<Icon data={faDumbbell} /> Entrenamientos personalizados y nutrición
 	</h3>
 
 	<div class="flex-container-row">
 		<div class="flex-item-50 service__img">
-			<Image src="/servicios/05.jpg" alt="Entrenamientos personales individuales y nutrición" />
+			<Carousel interval={3500}>
+				<CarouselElement visible={true}>
+					<img src="/servicios/05.jpg" alt="Entrenamientos individual y nutrición" />
+				</CarouselElement>
+				<CarouselElement>
+					<img src="/servicios/06.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
+				</CarouselElement>
+			</Carousel>
 		</div>
 
 		<div class="flex-item-50 service__info">
 			<div class="service__description">
 				<div class="service__bulletpoint">
 					<Icon data={faUser} />
-					<strong>Entrenamiendo individual 100% personalizado</strong>
+					<strong>Entrenamiendo 100% personalizado</strong>
 					para las necesidades y objetivos de cada cliente
 				</div>
 
@@ -64,25 +74,37 @@
 					<Icon data={faGlobe} />
 					<strong>En centro deportivo, domicilio u online</strong>
 				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faUser} />
+					<strong>Sesiones individuales o en grupo reducido (2-4 personas).</strong> Si quieres entrenar
+					en grupo reducido te puedes unir a uno ya existente según disponibilidad y caracteristicas.
+				</div>
 			</div>
 
 			<div class="service__price-container">
 				<div class="service__price">
-					En centro deportivo u online:
+					Individual en centro deportivo u online:
 					<ul>
-						<li>1 sesión 80 euros</li>
-						<li>Bono 5 sesiones 70 euros (350)</li>
-						<li>Bono 10 sesiones 60 euros (600)</li>
-						<li>Bono 20 sesiones 45 euros (900)</li>
+						<li>1 sesión 80€</li>
+						<li>Bono 5 sesiones 70€ (350)</li>
+						<li>Bono 10 sesiones 60€ (600)</li>
+						<li>Bono 20 sesiones 45€ (900)</li>
 					</ul>
 
-					En domicilio:
+					En grupo reducido en centro deportivo u online:
 					<ul>
-						<li>1 sesión 100 euros</li>
-						<li>Bono 5 sesiones 80 euros (400)</li>
-						<li>Bono 10 sesiones 70 euros (700)</li>
-						<li>Bono 20 sesiones 60 euros (1200)</li>
+						<li>25 € por persona y sesión</li>
 					</ul>
+
+					A domicilio*:
+					<ul>
+						<li>1 sesión 145€</li>
+						<li>Bono 5 sesiones 125€ (625)</li>
+						<li>Bono 10 sesiones 115€ (1150)</li>
+						<li>Bono 20 sesiones 105€ (2100)</li>
+					</ul>
+					* Las sesiones son por personas. Personas adicionales son 25 €/persona
 				</div>
 			</div>
 		</div>
@@ -99,72 +121,6 @@
 
 <div class="service-section">
 	<h3 class="service__title">
-		<Icon data={faDumbbell} /> Entrenamientos en grupo reducido y nutrición
-	</h3>
-
-	<div class="flex-container-row">
-		<div class="flex-item-50 service__img">
-			<Image src="/servicios/06.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
-		</div>
-
-		<div class="flex-item-50 service__info">
-			<div class="service__description">
-				<div class="service__bulletpoint">
-					<Icon data={faUser} />
-					<strong>Entrenamiendo en grupo reducido de 2-4 personas y 100% personalizado</strong>
-					para las necesidades y objetivos de cada cliente
-				</div>
-
-				<div class="service__bulletpoint">
-					<Icon data={faStopwatch} />
-					<strong>Horario flexible</strong>
-				</div>
-
-				<div class="service__bulletpoint">
-					<Icon data={faPencilAlt} />
-					<strong>Evaluación y asesoramiento</strong>
-					donde se toman medidas anatómicas, peso y composición
-				</div>
-
-				<div class="service__bulletpoint">
-					<Icon data={faUtensils} />
-					<strong>Dieta incluída gratuita</strong>
-					si contrata dos sesiones o más a la semana corporal
-				</div>
-
-				<div class="service__bulletpoint">
-					<Icon data={faGlobe} />
-					<strong>En centro deportivo, domicilio u online</strong>
-				</div>
-			</div>
-
-			<div class="service__price-container">
-				<div class="service__price">
-					En centro deportivo u online:
-					<ul>
-						<li>25 euros por persona y sesión</li>
-					</ul>
-
-					En domicilio:
-					<ul>
-						<li>40 euros por persona y sesión</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="service__quote">
-		<div class="quote__content">
-			"No ha sido solo mejorar mi condición física y psicológica sino que el 'YO SÍ PUEDO' se haya
-			convertido en parte de mi vida"
-		</div>
-		<div class="quote__name">Maria José B.</div>
-	</div>
-</div>
-
-<div class="service-section">
-	<h3 class="service__title">
 		<Icon data={faDumbbell} /> Mommy and Wellness
 	</h3>
 
@@ -172,10 +128,10 @@
 		<div class="flex-item-50 service__img">
 			<Carousel interval={3500}>
 				<CarouselElement visible={true}>
-					<Image src="/servicios/07.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
+					<img src="/servicios/07.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
 				</CarouselElement>
 				<CarouselElement>
-					<Image src="/servicios/08.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
+					<img src="/servicios/08.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
 				</CarouselElement>
 			</Carousel>
 		</div>
@@ -187,16 +143,39 @@
 					<strong>3 servicios de consultoría de lactancia</strong>
 				</div>
 
+				<ul>
+					<li>
+						Evaluación inicial de lactancia (posición de la mamá y el bebé, agarre, tiempos, etc) a
+						domicilio
+					</li>
+					<li>2 sesiones de consultoría de lactancia individuales a domicilio</li>
+					<li>Horario de mañana</li>
+				</ul>
+
+				<hr />
+
 				<div class="service__bulletpoint">
 					<Icon data={faFemale} />
 					<strong>4 sesiones de 30’ de recuperación y bienestar post parto</strong>
 				</div>
+
+				<ul>
+					<li>Evaluación inicial de salud post embarazo en el centro deportivo</li>
+					<li>
+						3 sesiones de 30’ de recuperación y bienestar post embarazo en el centro deportivo
+					</li>
+					<li>
+						Realizaremos ejercicios de recuperación de suelo pélvico, hipopresivos, estiramientos y
+						movilidad.
+					</li>
+					<li>Horario flexible</li>
+				</ul>
 			</div>
 
 			<div class="service__price-container">
 				<div class="service__price">
 					<ul>
-						<li>Pack 260 euros</li>
+						<li>Pack 260 €</li>
 					</ul>
 				</div>
 			</div>
@@ -219,33 +198,51 @@
 
 	<div class="flex-container-row">
 		<div class="flex-item-50 service__img">
-			<Image src="/servicios/09.jpg" alt="Plan a tu Medida" />
+			<img src="/servicios/09.jpg" alt="Plan a tu Medida" />
 		</div>
 
 		<div class="flex-item-50 service__info">
 			<div class="service__description">
-				Servicio combinado de pauta de entrenamiento y nutrición
+				<div>Servicio combinado de pauta de entrenamiento y nutrición</div>
+				<br />
+
+				<div class="service__bulletpoint">
+					<Icon data={faSearch} />
+					<strong>Evaluación inicial</strong>
+				</div>
 
 				<div class="service__bulletpoint">
 					<Icon data={faClipboardList} />
 					<strong
-						>pauta de entrenamiento se adapta al material de tu centro deportivo o hogar y al
-						espacio utilizado</strong
+						>Planificación semanal personalizada de entrenamiento con ejercicios adaptados a ti, a
+						tu nivel, a tu espacio y a tu objetivo</strong
 					>
 				</div>
 
 				<div class="service__bulletpoint">
 					<Icon data={faUtensils} />
 					<strong
-						>pauta de nutrición es totalmente personalizada al objetivo, ejercicio y día a día.</strong
+						>Pauta nutricional con un menú semanal donde aprenderás a comer sano y equilibrado
+						adaptando los alimentos a tu día a día y a tu gasto calórico.</strong
 					>
+				</div>
+
+				<div class="service__bulletpoint">
+					<Icon data={faClipboardCheck} />
+					<strong>Visita de control una vez pasados los 15 días del inicio del entrenamiento</strong
+					>
+				</div>
+
+				<div>
+					Se recomienda mantenerlo cada 8-10 semanas y posteriormente cambiarlo por uno de mayor
+					nivel.
 				</div>
 			</div>
 
 			<div class="service__price-container">
 				<div class="service__price">
 					<ul>
-						<li>Pack 100 euros</li>
+						<li>Pack 100€</li>
 					</ul>
 				</div>
 			</div>
@@ -269,7 +266,7 @@
 
 	<div class="flex-container-row">
 		<div class="flex-item-50 service__img">
-			<Image src="/servicios/10.jpg" alt="Servicio de Asesoramiento" />
+			<img src="/servicios/10.jpg" alt="Servicio de Asesoramiento" />
 		</div>
 
 		<div class="flex-item-50 service__info">
@@ -282,7 +279,7 @@
 			<div class="service__price-container">
 				<div class="service__price">
 					<ul>
-						<li>80 euros/hora</li>
+						<li>80€/hora</li>
 					</ul>
 				</div>
 			</div>
@@ -295,6 +292,66 @@
 			de Bea"
 		</div>
 		<div class="quote__name">Fran R.</div>
+	</div>
+</div>
+
+<div class="service-section">
+	<h3 class="service__title">
+		<Icon data={faDumbbell} /> Plan 12 semanas
+	</h3>
+
+	<div class="flex-container-row">
+		<div class="flex-item-50 service__img">
+			<img src="/servicios/11.jpg" alt="Servicio de Asesoramiento" />
+		</div>
+
+		<div class="flex-item-50 service__info">
+			<div class="service__description">
+				<div class="service__bulletpoint">
+					<Icon data={faPencilAlt} />
+					<strong>Evaluación inicial</strong>
+				</div>
+				<div class="service__bulletpoint">
+					<Icon data={faDumbbell} />
+					<strong>2 sesiones a la semana</strong>
+				</div>
+				<div class="service__bulletpoint">
+					<Icon data={faGlobe} />
+					<strong>Un entrenamiento virtual</strong>
+				</div>
+				<div class="service__bulletpoint">
+					<Icon data={faClipboardList} />
+					<strong>Un entrenamiento pautado</strong>
+				</div>
+				<div class="service__bulletpoint">
+					<Icon data={faUtensils} />
+					<strong>Una planificación nutricional</strong>
+				</div>
+				<div class="service__bulletpoint">
+					<Icon data={faCalendar} />
+					<strong>Cambio de material mensual</strong>
+				</div>
+				<div class="service__bulletpoint">
+					<Icon data={faRunning} />
+					<strong>Duración de 12 semanas</strong>
+				</div>
+			</div>
+
+			<div class="service__price-container">
+				<div class="service__price">
+					<ul>
+						<li>1250€</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="service__quote">
+		<div class="quote__content">
+			"En 3 meses he visto mejores resultados que en 10 años entrenando por mi cuenta"
+		</div>
+		<div class="quote__name">David B.</div>
 	</div>
 </div>
 

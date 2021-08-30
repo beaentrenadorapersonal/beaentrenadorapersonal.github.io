@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Icon from '$lib/Icon/index.svelte';
-	import { faBars } from '@fortawesome/free-solid-svg-icons';
-	import { faInstagram, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+	import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+	import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 	let hambMenu: HTMLDivElement;
 	let sideBar: HTMLDivElement;
@@ -33,14 +33,26 @@
 
 <div class="sidebar sidebar-closed" bind:this={sideBar}>
 	<div class="links">
-		<a sveltekit:prefetch class="sidebar-link" href="/">Inicio</a>
-		<a sveltekit:prefetch class="sidebar-link" href="/servicios">Servicios</a>
-		<a sveltekit:prefetch class="sidebar-link" href="/sobre">Sobre Mí</a>
-		<a sveltekit:prefetch class="sidebar-link" href="/contacto">Contacto</a>
+		<a sveltekit:prefetch href="/">Inicio</a>
+		<a sveltekit:prefetch href="/servicios">Servicios</a>
+		<a sveltekit:prefetch href="/sobre">Sobre Mí</a>
 	</div>
 	<div class="social-media">
-		<div class="social-media-item"><Icon data={faInstagram} /></div>
-		<div class="social-media-item"><Icon data={faFacebookSquare} /></div>
+		<div class="social-media-item">
+			<a href="mailto:beagomez.entrenadora1982@gmail.com">
+				<Icon data={faEnvelope} scale="1.5" /></a
+			>
+		</div>
+		<div class="social-media-item">
+			<a href="https://api.whatsapp.com/send?phone=+34640292078">
+				<Icon data={faWhatsapp} scale="1.5" />
+			</a>
+		</div>
+		<div class="social-media-item">
+			<a href="https://www.instagram.com/beagomez.entrenadorapersonal/"
+				><Icon data={faInstagram} scale="1.5" /></a
+			>
+		</div>
 	</div>
 </div>
 
@@ -88,7 +100,7 @@
 		transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	}
 
-	.sidebar-link {
+	a {
 		padding-top: 1em;
 		padding-bottom: 1em;
 		padding-left: 1em;
@@ -97,7 +109,7 @@
 		color: var(--sidebar-color);
 	}
 
-	.sidebar-link:hover {
+	a:hover {
 		background-color: #ddd;
 	}
 
@@ -110,7 +122,12 @@
 		display: flex;
 		flex-direction: row;
 	}
+
 	.social-media-item {
 		padding: 5px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
 	}
 </style>

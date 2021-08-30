@@ -1,51 +1,61 @@
 <script context="module" lang="ts">
-	import Image from '$lib/Image/index.svelte';
-
 	export const prerender = true;
 </script>
 
 <script lang="ts">
-	import Carousel from '$lib/Carousel/index.svelte';
-	import CarouselElement from '$lib/CarouselElement/index.svelte';
 </script>
 
-<section>
-	<div class="first-screen">
-		<Carousel interval={3500}>
-			<CarouselElement visible={true}>
-				<Image
-					src="/inicio/01.jpg"
-					alt="Salud, motivación y resultados"
-					message="Salud, motivación y resultados"
-				/>
-			</CarouselElement>
-			<CarouselElement>
-				<Image
-					src="/inicio/02.jpg"
-					alt="Difícil no significa impostible"
-					message="Difícil no significa impostible"
-				/>
-			</CarouselElement>
-			<CarouselElement>
-				<Image src="/inicio/03.jpg" alt="Es dif" message="Salud, motivación y resultados" />
-			</CarouselElement>
-			<CarouselElement>
-				<Image
-					src="/inicio/04.jpg"
-					alt="Es difícil, por eso vale la pena"
-					message="Es difícil, por eso vale la pena"
-				/>
-			</CarouselElement>
-		</Carousel>
+<div class="first-screen">
+	<div class="screen__wrapper">
+		<img class="first-screen__img" src="/inicio/01.jpg" alt="Ha Llegado la Hora de Cuidarse" />
+		<div class="text">
+			<strong>Ha Llegado la Hora de Cuidarse</strong>
+		</div>
 	</div>
-</section>
+</div>
+
+<div class="screen__wrapper">
+	<img
+		class="wide"
+		src="/inicio/02.jpg"
+		alt="Si la falta de motivación te ha llevado a una vida sedentaria ha llegado el momento de dar el salto"
+	/>
+	<div class="text">
+		<strong
+			>Si la falta de motivación te ha llevado a una vida sedentaria ha llegado el momento de dar el
+			salto</strong
+		>
+	</div>
+</div>
+
+<div class="screen__wrapper">
+	<img
+		class="wide"
+		src="/inicio/03.jpg"
+		alt="Cuidar tu salud física y mental es la mejor manera de llevar una vida plena"
+	/>
+	<div class="text">
+		<strong>Cuidar tu salud física y mental es la mejor manera de llevar una vida plena </strong>
+	</div>
+</div>
 
 <style>
-	section {
+	.first-screen {
+		text-align: center;
+	}
+
+	.screen__wrapper {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
+		width: 100%;
+		height: 100%;
+	}
+
+	.first-screen > .screen__wrapper > .text {
+		font-size: 2em;
+	}
+
+	.text {
+		padding: 1em;
 	}
 </style>

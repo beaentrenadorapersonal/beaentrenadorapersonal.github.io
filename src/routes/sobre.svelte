@@ -1,11 +1,10 @@
 <script lang="ts">
 	import Carousel from '$lib/Carousel/index.svelte';
 	import CarouselElement from '$lib/CarouselElement/index.svelte';
-	import Image from '$lib/Image/index.svelte';
 </script>
 
 <div class="first-screen">
-	<Image src="/sobre/11.jpg" alt="Bea Entrenadora Personal" />
+	<img src="/sobre/11.jpg" alt="Bea Entrenadora Personal" />
 </div>
 
 <div class="text-container">
@@ -26,13 +25,13 @@
 <div class="full-screen">
 	<Carousel interval={3500}>
 		<CarouselElement visible={true}>
-			<Image src="/sobre/12.jpg" />
+			<img src="/sobre/12.jpg" alt="bea" />
 		</CarouselElement>
 		<CarouselElement>
-			<Image src="/sobre/13.jpg" />
+			<img src="/sobre/13.jpg" alt="bea" />
 		</CarouselElement>
 		<CarouselElement>
-			<Image src="/sobre/14.jpg" />
+			<img src="/sobre/14.jpg" alt="bea" />
 		</CarouselElement>
 	</Carousel>
 </div>
@@ -50,13 +49,13 @@
 <div class="full-screen">
 	<Carousel interval={3500}>
 		<CarouselElement visible={true}>
-			<Image src="/sobre/15.jpg" />
+			<img src="/sobre/15.jpg" alt="bea" />
 		</CarouselElement>
 		<CarouselElement>
-			<Image src="/sobre/16.jpg" />
+			<img src="/sobre/16.jpg" alt="bea" />
 		</CarouselElement>
 		<CarouselElement>
-			<Image src="/sobre/17.jpg" />
+			<img src="/sobre/17.jpg" alt="bea" />
 		</CarouselElement>
 	</Carousel>
 </div>
