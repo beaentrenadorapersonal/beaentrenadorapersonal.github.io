@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from '$lib/Icon/index.svelte';
+	import Icon from 'svelte-awesome';
 	import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 	import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 

@@ -44,6 +44,8 @@
 		sea óptimo y los resultados ya no solo físicos si no también mentales y cambios de hábitos
 		sorprendentes.
 	</div>
+
+	<div class="outro"><strong>Te atreves a comenzar?</strong></div>
 </div>
 
 <div class="full-screen">
@@ -62,6 +64,12 @@
 
 <style>
 	.text {
+		padding: 1em;
+	}
+
+	.outro {
+		width: 100%;
+		text-align: center;
 		padding: 1em;
 	}
 </style>

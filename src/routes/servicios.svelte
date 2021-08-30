@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from '$lib/Icon/index.svelte';
+	import Icon from 'svelte-awesome';
 	import Carousel from '$lib/Carousel/index.svelte';
 	import CarouselElement from '$lib/CarouselElement/index.svelte';
 	import {
@@ -67,7 +67,7 @@
 				<div class="service__bulletpoint">
 					<Icon data={faUtensils} />
 					<strong>Dieta incluída gratuita</strong>
-					si contrata dos sesiones o más a la semana corporal
+					si contrata dos sesiones o más a la semana
 				</div>
 
 				<div class="service__bulletpoint">
@@ -104,7 +104,7 @@
 						<li>Bono 10 sesiones 115€ (1150)</li>
 						<li>Bono 20 sesiones 105€ (2100)</li>
 					</ul>
-					* Las sesiones son por personas. Personas adicionales son 25 €/persona
+					* Las sesiones son por persona. Personas adicionales son 25 €/persona
 				</div>
 			</div>
 		</div>
@@ -234,7 +234,7 @@
 				</div>
 
 				<div>
-					Se recomienda mantenerlo cada 8-10 semanas y posteriormente cambiarlo por uno de mayor
+					Se recomienda mantenerlo durante 8-10 semanas y posteriormente cambiarlo por uno de mayor
 					nivel.
 				</div>
 			</div>
@@ -272,7 +272,7 @@
 		<div class="flex-item-50 service__info">
 			<div class="service__description">
 				Todas esas respuestas o tips que necesitas para asegurarte de que tu plan de ejercicios y
-				alimentación es correcto, consejos, feedback,orientación y motivación para que continúes tu
+				alimentación es correcto, consejos, feedback, orientación y motivación para que continúes tu
 				andadura en el entrenamiento con más confianza y efectividad.
 			</div>
 
