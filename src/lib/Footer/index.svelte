@@ -2,6 +2,11 @@
 </script>
 
 <div class="footer">
+	<div class="location">
+		Servicios ofrecidos a domicilio en la zona del Baix Llobregat, en el centro deportivo <a
+			href="https://goo.gl/maps/NXwT8A41LDuoS89y6">Pau Gasol de Sant Boi de Llobregat</a
+		> y online.
+	</div>
 	<div class="upper">
 		<div class="links">
 			<div>Navegación</div>
@@ -17,7 +22,7 @@
 		</div>
 	</div>
 	<div class="bottom">
-		<p>Copyright © 2021 Bea Entrenadora Personal</p>
+		<div>Copyright © 2021 Bea Entrenadora Personal.</div>
 	</div>
 </div>
 
@@ -25,6 +30,10 @@
 	a {
 		text-decoration: none;
 		color: lightsalmon;
+	}
+
+	.location {
+		text-align: center;
 	}
 
 	.upper {

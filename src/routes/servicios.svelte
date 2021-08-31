@@ -23,7 +23,7 @@
 	<img src="/servicios/title.jpg" alt="Sea cual sea tu objetivo estamos aquí para ayudar" />
 	<div class="first-screen__text-container">
 		<div class="first-screen__text">
-			<strong>Sea cual sea tu objetivo estamos aquí para ayudar</strong>
+			<strong>Sea cual sea tu objetivo estamos aquí para ayudar.</strong>
 		</div>
 	</div>
 </div>
@@ -50,29 +50,29 @@
 				<div class="service__bulletpoint">
 					<Icon data={faUser} />
 					<strong>Entrenamiendo 100% personalizado</strong>
-					para las necesidades y objetivos de cada cliente
+					para las necesidades y objetivos de cada cliente.
 				</div>
 
 				<div class="service__bulletpoint">
 					<Icon data={faStopwatch} />
-					<strong>Horario flexible</strong>
+					<strong>Horario flexible.</strong>
 				</div>
 
 				<div class="service__bulletpoint">
 					<Icon data={faPencilAlt} />
 					<strong>Evaluación y asesoramiento</strong>
-					donde se toman medidas anatómicas, peso y composición
+					donde se toman medidas anatómicas, peso y composición.
 				</div>
 
 				<div class="service__bulletpoint">
 					<Icon data={faUtensils} />
 					<strong>Dieta incluída gratuita</strong>
-					si contrata dos sesiones o más a la semana
+					si contrata dos sesiones o más a la semana.
 				</div>
 
 				<div class="service__bulletpoint">
 					<Icon data={faGlobe} />
-					<strong>En centro deportivo, domicilio u online</strong>
+					<strong>En centro deportivo, domicilio u online.</strong>
 				</div>
 
 				<div class="service__bulletpoint">
@@ -86,25 +86,25 @@
 				<div class="service__price">
 					Individual en centro deportivo u online:
 					<ul>
-						<li>1 sesión 80€</li>
-						<li>Bono 5 sesiones 70€ (350)</li>
-						<li>Bono 10 sesiones 60€ (600)</li>
-						<li>Bono 20 sesiones 45€ (900)</li>
+						<li>1 sesión 80€.</li>
+						<li>Bono 5 sesiones 70€ (350).</li>
+						<li>Bono 10 sesiones 60€ (600).</li>
+						<li>Bono 20 sesiones 45€ (900).</li>
 					</ul>
 
 					En grupo reducido en centro deportivo u online:
 					<ul>
-						<li>25 € por persona y sesión</li>
+						<li>25 € por persona y sesión.</li>
 					</ul>
 
 					A domicilio*:
 					<ul>
-						<li>1 sesión 145€</li>
-						<li>Bono 5 sesiones 125€ (625)</li>
-						<li>Bono 10 sesiones 115€ (1150)</li>
-						<li>Bono 20 sesiones 105€ (2100)</li>
+						<li>1 sesión 145€.</li>
+						<li>Bono 5 sesiones 125€ (625).</li>
+						<li>Bono 10 sesiones 115€ (1150).</li>
+						<li>Bono 20 sesiones 105€ (2100).</li>
 					</ul>
-					* Las sesiones son por persona. Personas adicionales son 25 €/persona
+					* Las sesiones son por persona. Personas adicionales son 25 €/persona.
 				</div>
 			</div>
 		</div>
@@ -140,42 +140,42 @@
 			<div class="service__description">
 				<div class="service__bulletpoint">
 					<Icon data={faBaby} />
-					<strong>3 servicios de consultoría de lactancia</strong>
+					<strong>3 servicios de consultoría de lactancia.</strong>
 				</div>
 
 				<ul>
 					<li>
 						Evaluación inicial de lactancia (posición de la mamá y el bebé, agarre, tiempos, etc) a
-						domicilio
+						domicilio.
 					</li>
-					<li>2 sesiones de consultoría de lactancia individuales a domicilio</li>
-					<li>Horario de mañana</li>
+					<li>2 sesiones de consultoría de lactancia individuales a domicilio.</li>
+					<li>Horario de mañana.</li>
 				</ul>
 
 				<hr />
 
 				<div class="service__bulletpoint">
 					<Icon data={faFemale} />
-					<strong>4 sesiones de 30’ de recuperación y bienestar post parto</strong>
+					<strong>4 sesiones de 30’ de recuperación y bienestar post parto.</strong>
 				</div>
 
 				<ul>
-					<li>Evaluación inicial de salud post embarazo en el centro deportivo</li>
+					<li>Evaluación inicial de salud post embarazo en el centro deportivo.</li>
 					<li>
-						3 sesiones de 30’ de recuperación y bienestar post embarazo en el centro deportivo
+						3 sesiones de 30’ de recuperación y bienestar post embarazo en el centro deportivo.
 					</li>
 					<li>
 						Realizaremos ejercicios de recuperación de suelo pélvico, hipopresivos, estiramientos y
 						movilidad.
 					</li>
-					<li>Horario flexible</li>
+					<li>Horario flexible.</li>
 				</ul>
 			</div>
 
 			<div class="service__price-container">
 				<div class="service__price">
 					<ul>
-						<li>Pack 260 €</li>
+						<li>Pack 260 €.</li>
 					</ul>
 				</div>
 			</div>
@@ -185,7 +185,8 @@
 	<div class="service__quote">
 		<div class="quote__content">
 			"Gracias a mi entrenadora he subido mi autoestima, confío en mi y me siento más fuerte además
-			de haber tomado conciencia de buenos hábitos y no abandonarlos. Experiencia 100% recomendable"
+			de haber tomado conciencia de buenos hábitos y no abandonarlos. Experiencia 100%
+			recomendable."
 		</div>
 		<div class="quote__name">Lorena S.</div>
 	</div>
@@ -203,19 +204,19 @@
 
 		<div class="flex-item-50 service__info">
 			<div class="service__description">
-				<div>Servicio combinado de pauta de entrenamiento y nutrición</div>
+				<div>Servicio combinado de pauta de entrenamiento y nutrición.</div>
 				<br />
 
 				<div class="service__bulletpoint">
 					<Icon data={faSearch} />
-					<strong>Evaluación inicial</strong>
+					<strong>Evaluación inicial.</strong>
 				</div>
 
 				<div class="service__bulletpoint">
 					<Icon data={faClipboardList} />
 					<strong
 						>Planificación semanal personalizada de entrenamiento con ejercicios adaptados a ti, a
-						tu nivel, a tu espacio y a tu objetivo</strong
+						tu nivel, a tu espacio y a tu objetivo.</strong
 					>
 				</div>
 
@@ -229,7 +230,8 @@
 
 				<div class="service__bulletpoint">
 					<Icon data={faClipboardCheck} />
-					<strong>Visita de control una vez pasados los 15 días del inicio del entrenamiento</strong
+					<strong
+						>Visita de control una vez pasados los 15 días del inicio del entrenamiento.</strong
 					>
 				</div>
 
@@ -242,7 +244,7 @@
 			<div class="service__price-container">
 				<div class="service__price">
 					<ul>
-						<li>Pack 100€</li>
+						<li>Pack 100€.</li>
 					</ul>
 				</div>
 			</div>
@@ -279,7 +281,7 @@
 			<div class="service__price-container">
 				<div class="service__price">
 					<ul>
-						<li>80€/hora</li>
+						<li>80€/hora.</li>
 					</ul>
 				</div>
 			</div>
@@ -289,7 +291,7 @@
 	<div class="service__quote">
 		<div class="quote__content">
 			"Tengo poco tiempo para entrenar y la manera de APROVECHAR MI TIEMPO AL 120% es con la ayuda
-			de Bea"
+			de Bea."
 		</div>
 		<div class="quote__name">Fran R.</div>
 	</div>
@@ -309,38 +311,38 @@
 			<div class="service__description">
 				<div class="service__bulletpoint">
 					<Icon data={faPencilAlt} />
-					<strong>Evaluación inicial</strong>
+					<strong>Evaluación inicial.</strong>
 				</div>
 				<div class="service__bulletpoint">
 					<Icon data={faDumbbell} />
-					<strong>2 sesiones a la semana</strong>
+					<strong>2 sesiones a la semana.</strong>
 				</div>
 				<div class="service__bulletpoint">
 					<Icon data={faGlobe} />
-					<strong>Un entrenamiento virtual</strong>
+					<strong>Un entrenamiento virtual.</strong>
 				</div>
 				<div class="service__bulletpoint">
 					<Icon data={faClipboardList} />
-					<strong>Un entrenamiento pautado</strong>
+					<strong>Un entrenamiento pautado.</strong>
 				</div>
 				<div class="service__bulletpoint">
 					<Icon data={faUtensils} />
-					<strong>Una planificación nutricional</strong>
+					<strong>Una planificación nutricional.</strong>
 				</div>
 				<div class="service__bulletpoint">
 					<Icon data={faCalendar} />
-					<strong>Cambio de material mensual</strong>
+					<strong>Cambio de material mensual.</strong>
 				</div>
 				<div class="service__bulletpoint">
 					<Icon data={faRunning} />
-					<strong>Duración de 12 semanas</strong>
+					<strong>Duración de 12 semanas.</strong>
 				</div>
 			</div>
 
 			<div class="service__price-container">
 				<div class="service__price">
 					<ul>
-						<li>1250€</li>
+						<li>1250€.</li>
 					</ul>
 				</div>
 			</div>
@@ -349,7 +351,7 @@
 
 	<div class="service__quote">
 		<div class="quote__content">
-			"En 3 meses he visto mejores resultados que en 10 años entrenando por mi cuenta"
+			"En 3 meses he visto mejores resultados que en 10 años entrenando por mi cuenta."
 		</div>
 		<div class="quote__name">David B.</div>
 	</div>

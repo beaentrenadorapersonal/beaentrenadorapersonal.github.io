@@ -71,5 +71,6 @@
 		width: 100%;
 		text-align: center;
 		padding: 1em;
+		font-size: 2em;
 	}
 </style>

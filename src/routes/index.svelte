@@ -9,7 +9,7 @@
 	<img class="first-screen__img" src="/inicio/01.jpg" alt="Ha Llegado la Hora de Cuidarse" />
 </div>
 <div class="text title">
-	<strong>Ha Llegado la Hora de Cuidarse</strong>
+	<strong>Ha Llegado la Hora de Cuidarse.</strong>
 </div>
 
 <img
@@ -20,7 +20,7 @@
 <div class="text">
 	<strong
 		>Si la falta de motivación te ha llevado a una vida sedentaria ha llegado el momento de dar el
-		salto</strong
+		salto.</strong
 	>
 </div>
 
@@ -30,7 +30,7 @@
 	alt="Cuidar tu salud física y mental es la mejor manera de llevar una vida plena"
 />
 <div class="text">
-	<strong>Cuidar tu salud física y mental es la mejor manera de llevar una vida plena </strong>
+	<strong>Cuidar tu salud física y mental es la mejor manera de llevar una vida plena.</strong>
 </div>
 
 <style>
