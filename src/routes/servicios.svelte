@@ -169,10 +169,10 @@
 
 	<div class="service__quote">
 		<div class="quote__content">
-			Con la plataforma digital puedo entrenar en cualquier momento y en cualquier sitio, sin
-			excusas. Me estoy poniendo como Chuck Norris!
+            La plataforma digital es muy cómoda de usar ya que puedo entrenar donde y cuando pueda.
+            Es perfecto cuando vas con el tiempo justo.
 		</div>
-		<div class="quote__name">Pepe</div>
+		<div class="quote__name">Leticia</div>
 	</div>
 </div>
 
