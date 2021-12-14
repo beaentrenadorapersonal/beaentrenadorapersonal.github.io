@@ -16,7 +16,7 @@
 		faPencilAlt,
 		faGlobe,
 		faUtensils,
-        faMobileAlt,
+		faMobileAlt
 	} from '@fortawesome/free-solid-svg-icons';
 </script>
 
@@ -127,19 +127,22 @@
 
 	<div class="flex-container-row">
 		<div class="flex-item-50 service__img">
-					<img src="/servicios/dudyfit.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
+			<img src="/servicios/dudyfit.jpg" alt="Entrenamientos en grupo reducido y nutrición" />
 		</div>
 
 		<div class="flex-item-50 service__info">
 			<div class="service__description">
-
-                <div>Tu entrenamiento y pauta de nutrición totalmente a medida en plataforma digital para que puedas entrenar donde y cuando te vaya bien. Conseguir tus objetivos nunca ha sido tan cómodo.</div>
-                <br>
+				<div>
+					Tu entrenamiento y pauta de nutrición totalmente a medida en plataforma digital para que
+					puedas entrenar donde y cuando te vaya bien. Conseguir tus objetivos nunca ha sido tan
+					cómodo.
+				</div>
+				<br />
 
 				<div class="service__bulletpoint">
 					<Icon data={faUser} />
-                    <strong>3 entrenamientos semanales</strong> con videos explicativos para que consigas
-                    tu objetivo desde casa.
+					<strong>3 entrenamientos semanales</strong> con videos explicativos para que consigas tu objetivo
+					desde casa.
 				</div>
 
 				<div class="service__bulletpoint">
@@ -156,7 +159,6 @@
 					<Icon data={faMobileAlt} />
 					<strong>Completamente digital</strong> para que entrenes cuando y donde quieras
 				</div>
-
 			</div>
 
 			<div class="service__price-container">
@@ -166,11 +168,13 @@
 	</div>
 
 	<div class="service__quote">
-		<div class="quote__content">Con la plataforma digital puedo entrenar en cualquier momento y en cualquier sitio, sin excusas. Me estoy poniendo como Chuck Norris!</div>
+		<div class="quote__content">
+			Con la plataforma digital puedo entrenar en cualquier momento y en cualquier sitio, sin
+			excusas. Me estoy poniendo como Chuck Norris!
+		</div>
 		<div class="quote__name">Pepe</div>
 	</div>
 </div>
-
 
 <div class="service-section">
 	<h3 class="service__title">
