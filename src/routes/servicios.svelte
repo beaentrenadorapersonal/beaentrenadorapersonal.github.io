@@ -82,32 +82,6 @@
 					en grupo reducido te puedes unir a uno ya existente según disponibilidad y caracteristicas.
 				</div>
 			</div>
-
-			<div class="service__price-container">
-				<div class="service__price">
-					Individual en centro deportivo u online:
-					<ul>
-						<li>1 sesión 80€.</li>
-						<li>Bono 5 sesiones 70€ (350).</li>
-						<li>Bono 10 sesiones 60€ (600).</li>
-						<li>Bono 20 sesiones 45€ (900).</li>
-					</ul>
-
-					En grupo reducido en centro deportivo u online:
-					<ul>
-						<li>25 € por persona y sesión.</li>
-					</ul>
-
-					A domicilio*:
-					<ul>
-						<li>1 sesión 145€.</li>
-						<li>Bono 5 sesiones 125€ (625).</li>
-						<li>Bono 10 sesiones 115€ (1150).</li>
-						<li>Bono 20 sesiones 105€ (2100).</li>
-					</ul>
-					* Las sesiones son por persona. Personas adicionales son 25 €/persona.
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -160,17 +134,13 @@
 					<strong>Completamente digital</strong> para que entrenes cuando y donde quieras
 				</div>
 			</div>
-
-			<div class="service__price-container">
-				<div class="service__price">Precio: 120 euros/mes</div>
-			</div>
 		</div>
 	</div>
 
 	<div class="service__quote">
 		<div class="quote__content">
-            La plataforma digital es muy cómoda de usar ya que puedo entrenar donde y cuando pueda.
-            Es perfecto cuando vas con el tiempo justo.
+			La plataforma digital es muy cómoda de usar ya que puedo entrenar donde y cuando pueda. Es
+			perfecto cuando vas con el tiempo justo.
 		</div>
 		<div class="quote__name">Leticia</div>
 	</div>
@@ -227,14 +197,6 @@
 					</li>
 					<li>Horario flexible.</li>
 				</ul>
-			</div>
-
-			<div class="service__price-container">
-				<div class="service__price">
-					<ul>
-						<li>Pack 260 €.</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -297,14 +259,6 @@
 					nivel.
 				</div>
 			</div>
-
-			<div class="service__price-container">
-				<div class="service__price">
-					<ul>
-						<li>Pack 100€.</li>
-					</ul>
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -333,14 +287,6 @@
 				Todas esas respuestas o tips que necesitas para asegurarte de que tu plan de ejercicios y
 				alimentación es correcto, consejos, feedback, orientación y motivación para que continúes tu
 				andadura en el entrenamiento con más confianza y efectividad.
-			</div>
-
-			<div class="service__price-container">
-				<div class="service__price">
-					<ul>
-						<li>80€/hora.</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -393,14 +339,6 @@
 				<div class="service__bulletpoint">
 					<Icon data={faRunning} />
 					<strong>Duración de 12 semanas.</strong>
-				</div>
-			</div>
-
-			<div class="service__price-container">
-				<div class="service__price">
-					<ul>
-						<li>1250€.</li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -456,17 +394,6 @@
 
 	.service__bulletpoint {
 		padding-bottom: 0.5em;
-	}
-
-	.service__price-container {
-		background-color: #eccdbe;
-		color: black;
-		margin: 0.5em;
-		border-radius: 5px;
-	}
-
-	.service__price {
-		padding: 0.5em;
 	}
 
 	.service__quote {
