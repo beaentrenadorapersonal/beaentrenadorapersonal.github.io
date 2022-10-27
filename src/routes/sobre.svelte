@@ -4,7 +4,7 @@
 </script>
 
 <div class="first-screen">
-	<img src="/sobre/11.jpg" alt="Bea Entrenadora Personal" />
+	<img class="top" src="/sobre/11.jpg" alt="Bea Entrenadora Personal" />
 </div>
 
 <div class="text-container">

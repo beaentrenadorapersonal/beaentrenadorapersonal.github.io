@@ -59,6 +59,10 @@ img {
 	object-fit: cover;
 }
 
+img.top {
+    object-position: 100% 30%;
+}
+
 img.wide {
 	height: auto;
 	width: 100%;
