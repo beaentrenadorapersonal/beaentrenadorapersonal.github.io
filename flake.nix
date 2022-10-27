@@ -43,6 +43,7 @@
               nixpkgs-fmt
               nodejs-18_x
               nodePackages.npm
+              nodePackages.prettier
             ];
           };
         };
